@@ -16,7 +16,7 @@
 
 cask "pipeline-island" do
   version "1.0.0"
-  sha256 "003f802a27fee1765dc6397c882610f1c46628dc746dbde49dd00348843ae73b"
+  sha256 "d486e5316aaaddd3fdc3ed0629ce717e6d0801ce35bec753126f12065f871cd2"
 
   url "https://github.com/Uudg/pipeline-island/archive/refs/tags/v#{version}.tar.gz"
   name "Pipeline Island"
