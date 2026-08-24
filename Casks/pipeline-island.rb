@@ -23,7 +23,7 @@ cask "pipeline-island" do
   desc "Live GitLab CI pipeline status in the macOS notch"
   homepage "https://github.com/Uudg/pipeline-island"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: [:sonoma, :sequoia, :tahoe]
 
   # Build from source. Xcode's Swift toolchain is required; the Command Line
   # Tools alone are enough.
