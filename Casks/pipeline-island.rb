@@ -53,6 +53,11 @@ cask "pipeline-island" do
     EOS
   end
 
+  # Quit the running app before replacing the bundle. Without this, an upgrade
+  # swaps the .app out from under a live process: the menu bar item survives
+  # pointing at code that no longer exists on disk.
+  uninstall quit: "com.pipelineisland.app"
+
   zap trash: [
     "~/Library/Preferences/com.pipelineisland.app.plist",
   ]
